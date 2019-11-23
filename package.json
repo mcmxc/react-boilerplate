@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,5 +17,9 @@
     "url": "https://github.com/mcmxc/react-boilerplate/issues"
   },
   "homepage": "https://github.com/mcmxc/react-boilerplate#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
 }
