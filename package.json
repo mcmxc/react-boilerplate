@@ -10,6 +10,11 @@
     "format": "pretty-quick",
     "lint": "eslint src/**/*.js"
   },
+  "husky": {
+    "hooks": {
+      "precommit": "pretty-quick --staged &&  npm run lint && npm run test"
+    }
+  },
   "author": "",
   "license": "ISC",
   "repository": {
@@ -31,12 +36,14 @@
     "@babel/preset-react": "^7.7.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "eslint": "^6.7.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.1.0",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
